@@ -32,6 +32,9 @@ module.exports = {
         "react-perf/jsx-no-new-object-as-prop": 2,
         "react-perf/jsx-no-new-array-as-prop": 2,
         "react-perf/jsx-no-new-function-as-prop": 2
+      },
+      settings: {
+        next: false // Default value
       }
     },
     all: {
@@ -41,7 +44,10 @@ module.exports = {
           jsx: true
         }
       },
-      rules: configureAsError(allRules)
+      rules: configureAsError(allRules),
+      settings: {
+        next: false // Default value
+      }
     }
   }
 };
